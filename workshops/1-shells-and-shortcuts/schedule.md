@@ -1,4 +1,4 @@
-## Shells and Shortcuts
+## Schedule
 
 | Time   | Activity                        |
 |--------|---------------------------------|

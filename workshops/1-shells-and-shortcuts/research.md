@@ -1,3 +1,5 @@
+## Research
+
 The main outcomes of this exercise are to understand the following:
 * How do I navigate the file system?
 * How do I combine commands together?
