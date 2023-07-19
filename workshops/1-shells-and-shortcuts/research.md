@@ -5,7 +5,7 @@ The main outcomes of this exercise are to understand the following:
 * How do I combine commands together?
 * What do I need to know to write a script file?
 
-Please use the questions as a guide to your research. Consult our [resources document](./resources.md) for some useful links, and of course, the internet.
+Please use the questions as a guide to your research. Consult our [resources document](./resources.md) for some useful links, and use the internet!
 
 Don't worry if you don't get through all the questions. If you do, try the extension questions.
 
