@@ -2,7 +2,7 @@
 
 These workshops are designed to get developers comfortable working on the command line. Along the way we will cover different tools and fundamentals, including:
 
-- Shells and Shortcuts 
+- [Shells and Shortcuts](./workshops/1-shells-and-shortcuts) 
 - Processes and Daemons 
 - Debugging and Profiling 
 - Virtualisation and Concurrency
