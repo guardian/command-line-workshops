@@ -10,7 +10,7 @@ Please use the questions as a guide to your research. Consult our [resources doc
 Don't worry if you don't get through all the questions. If you do, try the extension questions.
 
 ### Group 1
-#### How do I navigate the file system?
+#### 4. How do I navigate the file system?
 * How do I find out my current directory, change directory, and list files within my directory?
 * What is the difference between the home directory and the root directory?
 * What is the difference between ./ and / and ~/?
@@ -25,7 +25,7 @@ Extension:
 * Are there any commands that can help you find particular lines within files?
 
 ### Group 2
-#### How do I combine commands together?
+#### 5. How do I combine commands together?
 * `cat file.txt | grep sport | wc -l` - What is this command doing? (Hint: look up 'pipes')
 * What is the difference between piping and redirecting?
 * What are the three ‘standard streams’?
@@ -42,7 +42,7 @@ Extension:
 
 
 ### Group 3
-#### What do I need to know to write a script file?
+#### 6. What do I need to know to write a script file?
 * What is the purpose of a script file?
 * How does my shell know to interpret a file as a script file? (shebang)
 * What permissions does a file need to be executable?
