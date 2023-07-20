@@ -14,13 +14,13 @@ Don't worry if you don't get through all the questions. If you do, try the exten
 * How do I find out my current directory, change directory, and list files within my directory?
 * What is the difference between the home directory and the root directory?
 * What is the difference between ./ and / and ~/?
-* What’s the $PATH? (also which <cmd>)
-* Why does ‘script.sh’ not work, but ‘./script.sh’ does?
+* What’s the $PATH? (also, what does `which <cmd>` do?)
+* Imagine you've created a new script file named `script.sh`. You now need to run it. Why will typing `script.sh` not work, when `./script.sh` does?
 * What are some useful shortcuts for navigating quickly on the command line?
 
 Extension:
 * What are the common locations for different files? Hint: look up FHS
-* Can you think of any Guardian specific locations? (e.g. `./gu` VS `etc/gu`)
+* Can you think of any Guardian specific locations? (e.g. `./gu` VS `/etc/gu`)
 * Are there any commands that can help you find particular files?
 * Are there any commands that can help you find particular lines within files?
 
@@ -29,7 +29,8 @@ Extension:
 * `cat file.txt | grep sport | wc -l` - What is this command doing? (Hint: look up 'pipes')
 * What is the difference between piping and redirecting?
 * What are the three ‘standard streams’?
-* How do we manage control flow?
+* How can we perform commands conditionally?
+* How can we repeat commands?
 * What are exit codes?
 * What are some useful shortcuts for navigating quickly on the command line?
 
@@ -47,9 +48,12 @@ Extension:
 * How does my shell know to interpret a file as a script file? (shebang)
 * What permissions does a file need to be executable?
 * What settings can I apply when running a script file?
-* set -e, set -u, set -x (also unsetting with set +e)
-* How do I define variables in bash? 
+  * eg. What do set -e, set -u, set -x do?
+  * How do you unset a setting?
+  * How many other settings can you find? What do they do?
+* How do I define variables in bash?
 * How do I pass arguments from the command line?
+* How do you access those arguments from inside the script?
 
 Extension:
 * What effects do single quotes, double quotes and backticks have?
