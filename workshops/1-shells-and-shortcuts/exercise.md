@@ -21,6 +21,8 @@ There are many ways to arrive at an answer. We're likely to use **common unix ut
 
 The logs will be given to you by your instructor as a .csv file, fresh from [central ELK](https://logs.gutools.co.uk/), our logging platform. (They're real!)
 
+To find out more about the commands mentioned in the hints below, we recommend using [tldr](https://tldr.sh/) – you can download and run this locally on the command line, or just use the webapp.
+
 #### 1. Read the file and output all of the lines in the file that a) contain user e-mails, and b) represent HTTP requests, to stdout.
 >>>>>>> 4ad4362 (Add exercise for week 1)
 
@@ -61,15 +63,19 @@ Here's an example of what the output might look like:
 
 <details>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <summary>Answers</summary>
 It's "workflow.test@guardian.co.uk"! But who is Workflow Test? That's the e-mail address used by beloved production monitoring system, [Prodmon](https://github.com/guardian/editorial-tools-production-monitoring/)! Clearly, it's gone mad with power after a recent deploy – the team deploys the most recent known good branch, and the system stabilises. Phew!
 =======
 <summary>Answer</summary>
+=======
+<summary>The final answer!</summary>
+>>>>>>> 90b8a51 (More exercise amends)
 You should be seeing lots of requests from "workflow.test@guardian.co.uk"! But who on earth is Workflow Test? That's the e-mail address used by beloved production monitoring system, [Prodmon](https://github.com/guardian/editorial-tools-production-monitoring/)! Clearly, it's gone mad with power after a recent deploy – the team deploys the most recent known good branch, and the system stabilises. Phew!
 >>>>>>> 4ad4362 (Add exercise for week 1)
 </details>
 
-#### 4. What a useful command! Let's add it to a convenient script, so it's easy for us to scan our logs next time this happens.
+#### 4. Phew, the incident is over. But what a useful command! Let's add it to a convenient script, so it's easy for us to scan our logs next time this happens.
 
 The script should accept the name of the csv file as its first argument, so we don't have to hardcode it – running it should look like:
 
@@ -79,5 +85,9 @@ The script should accept the name of the csv file as its first argument, so we d
 
 #### 5. Our script should write the results to a file, rather than stdout.
 
-To make it easy to identify and to see when it was run, let's write it to a file called `composer-backend-user-request-count-$DATE_TIME.txt`. `$DATE_TIME` should be the date and time the file was written, in a filename friendly format, e.g. [ISO8601](https://en.wikipedia.org/wiki/ISO_8601).
+To make the file we create on each execution easy to identify, let's write it to a file called `composer-backend-user-request-count-$DATE_TIME.txt`. `$DATE_TIME` should be the date and time the file was written, in a filename friendly format, e.g. [ISO8601](https://en.wikipedia.org/wiki/ISO_8601).
 
+<details>
+<summary>Hints</summary>
+The unix utility `date` will output a format date.
+</details>
