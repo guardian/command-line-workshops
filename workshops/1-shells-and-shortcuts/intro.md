@@ -4,7 +4,6 @@
 * What are today’s common operating systems?
 * What operating system is running on my work laptop?
 * What is UNIX?
-* How does Linux differ from MacOS?
 
 ### 2. What is the shell?
 * What is the kernel and how does the shell interact with it?
