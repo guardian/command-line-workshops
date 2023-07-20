@@ -2,21 +2,23 @@
 
 There's chaos in the newsroom! Composer, our content management system, is slowing to a crawl, and journalists are missing deadlines.
 
-We think it might be because of **increased traffic**. To investigate, we've got some logs from one of Composer's backend services, helpfully called `composer-backend`. It helpfully logs a **user e-mail** for every request it receives.
+We think it might be because of **increased traffic**. To investigate, we've got some logs from one of Composer's backend services. It logs a **user e-mail** for every request it receives.
 
 We'd like to answer the question – which user is sending the largest number of requests? Maybe we can tell them to knock it off!
 
-Let's investigate! There are many ways to solve this exercise. We're likely to use **common unix utilities**, **piping**, **redirection**, **shell scripts**, and **substitution**.
+There are many ways to arrive at an answer. We're likely to use **common unix utilities**, **piping**, **redirection**, **shell scripts**, and **substitution**.
 
 The logs will be given to you by your instructor as a .csv file, fresh from [central ELK](https://logs.gutools.co.uk/), our logging platform. (They're real!)
 
-#### 1. Read the file and output all of the lines in the file that a) contain user e-mails, and b) represent requests, to stdout.
+To find out more about the commands mentioned in the hints below, we recommend using [tldr](https://tldr.sh/) – you can download and run this locally on the command line, or just use the webapp.
+
+#### 1. Read the file and output all of the lines in the file that a) contain user e-mails, and b) represent HTTP requests, to stdout.
 
 There are a few lines that don't have e-mails – or that have e-mails, but don't represent requests. We don't want those.
 
 <details>
 <summary>Hints</summary>
-We should be able to use `cat`, `grep` and the pipe operator `|` to get this done. `grep -E` can search for regular expressions – the regular expression `(GET|PUT|POST|HEAD)` will match those HTTP verbs in case-sensitive fashion.
+We should be able to use `cat`, `grep` and the pipe operator `|` to get this done. `grep -E` can search for regular expressions. The regular expression `(GET|PUT|POST|HEAD)` will match those HTTP verbs in case-sensitive fashion.
 </details>
 
 #### 2. Alter the command to display only the user e-mail for every line of input it receives.
@@ -44,8 +46,8 @@ Here's an example of what the output might look like:
 </details>
 
 <details>
-<summary>Answers</summary>
-It's "workflow.test@guardian.co.uk"! But who is Workflow Test? That's the e-mail address used by beloved production monitoring system, [Prodmon](https://github.com/guardian/editorial-tools-production-monitoring/)! Clearly, it's gone mad with power after a recent deploy – the team deploys the most recent known good branch, and the system stabilises. Phew!
+<summary>The final answer!</summary>
+You should be seeing lots of requests from "workflow.test@guardian.co.uk"! But who on earth is Workflow Test? That's the e-mail address used by beloved production monitoring system, [Prodmon](https://github.com/guardian/editorial-tools-production-monitoring/)! Clearly, it's gone mad with power after a recent deploy – the team deploys the most recent known good branch, and the system stabilises. Phew!
 </details>
 
 #### 4. What a useful command! Let's add it to a convenient script, so it's easy for us to scan our logs next time this happens.
