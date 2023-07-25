@@ -1,6 +1,6 @@
 ## Learning Outcomes
 
-By the end of this workshop, you should have be able to answer the following questions:
+By the end of this workshop, you should be able to answer the following questions:
 1. [What is an operating system?](./intro.md#1-what-is-an-operating-system)
 2. [What is the shell?](./intro.md#2-what-is-the-shell)
 3. [How do I use the shell?](./intro.md#3-how-do-i-use-the-shell)
