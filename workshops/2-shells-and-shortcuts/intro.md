@@ -200,15 +200,15 @@ a
 b
 c
 
-$ echo 'a\na\nb\nb\na\nb\nc\nb\na\na\nb' | sort | uniq --count
+$ echo 'a\na\nb\nb\na\nb\nc\nb\na\na\nb' | sort | uniq -c
    5 a
    5 b
    1 c
 
-$ echo 'a\na\nb\nb\na\nb\nc\nb\na\na\nb' | sort | uniq --unique
+$ echo 'a\na\nb\nb\na\nb\nc\nb\na\na\nb' | sort | uniq -u
 c
 
-$ echo 'a\na\nb\nb\na\nb\nc\nb\na\na\nb' | sort | uniq --repeated
+$ echo 'a\na\nb\nb\na\nb\nc\nb\na\na\nb' | sort | uniq -d
 a
 b
 ```
