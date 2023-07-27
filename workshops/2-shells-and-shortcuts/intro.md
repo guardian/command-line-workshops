@@ -145,7 +145,7 @@ $ cd grid; du -hs ./* # what are the biggest directories in the grid repo?
  12M	./thrall
 1.6M	./usage
 
-$ du -hs | sort -h # above was unhelpful, where was the biggest? SORT
+$ du -hs ./* | sort -h # above was unhelpful, where was the biggest? SORT
 4.0K	./Brewfile
 4.0K	./NOTICE
 4.0K	./README.md
