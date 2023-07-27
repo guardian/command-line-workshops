@@ -62,7 +62,7 @@ api.media.gutools.co.uk
 * `awk`
   * Similar to sed, different syntax, eg:
 ```
-$ echo hello world | awk '{sub(/hello/,HELLO); print}'
+$ echo hello world | awk '{sub(/hello/,"HELLO"); print}'
 HELLO world
 ```
 * `tr`
