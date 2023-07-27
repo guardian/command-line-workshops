@@ -12,13 +12,15 @@ The logs will be given to you by your instructor as a .csv file, fresh from [cen
 
 To find out more about the commands mentioned in the hints below, we recommend using [tldr](https://tldr.sh/) – you can download and run this locally on the command line, or just use the webapp.
 
+<hr/>
+
 #### 1. Read the file and output all of the lines in the file that a) contain user e-mails, and b) represent HTTP requests, to stdout.
 
 There are a few lines that don't have e-mails – or that have e-mails, but don't represent requests. We don't want those.
 
 <details>
 <summary>Hints</summary>
-We should be able to use `cat`, `grep` and the pipe operator `|` to get this done. `grep -E` can search for regular expressions. The regular expression `(GET|PUT|POST|HEAD)` will match those HTTP verbs in case-sensitive fashion.
+We should be able to use `cat`, `grep` and the pipe operator `|` to get this done. `grep -E` can search for regular expressions – the 'E' stands for 'extended' regular expressions, and is necessary to enable what are now commonly used features of regular expressions. The regular expression `(GET|PUT|POST|HEAD)` will match lines that contain any of those HTTP verbs in case-sensitive fashion.
 </details>
 
 #### 2. Alter the command to display only the user e-mail for every line of input it receives.
@@ -30,7 +32,7 @@ Be sure to show only the e-mail – no additional characters! We might want to u
 `cut` will help you isolate the input, and CSV files are delimited with commas. `sed` will help you strip any extra characters, should they appear in your output.
 </details>
 
-#### 3. Alter the command count the number of unique e-mails, and sort the output to show us the most prolific user.
+#### 3. Alter the command to display a count of the number of unique e-mails, and sort the output to show us the most prolific user.
 
 Here's an example of what the output might look like:
 
@@ -62,3 +64,18 @@ The script should accept the name of the csv file as its first argument, so we d
 
 To make it easy to identify and to see when it was run, let's write it to a file called `composer-backend-user-request-count-$DATE_TIME.txt`. `$DATE_TIME` should be the date and time the file was written, in a filename friendly format, e.g. [ISO8601](https://en.wikipedia.org/wiki/ISO_8601).
 
+<hr />
+
+Well done, you've completed the exercise! 🎉 If you've still got some time left, here are some stretch goals –
+
+- Add a second argument to the script that allows the user to _optionally_ specify a username to filter by.
+- Allow the user to specify the arguments with parameters, for example `./script.sh -f ./path-to-file.txt -u example.user`.
+- Can we display the HTTP verb alongside the user, to see which verbs are most popular? Here's some example output:
+```
+117 POST example.user@guardian.co.uk
+122 GET example.user@guardian.co.uk
+125 POST another.user@guardian.co.uk
+129 GET another.user@guardian.co.uk
+131 POST third.user@guardian.co.uk
+132 PUT third.user@guardian.co.uk
+```
