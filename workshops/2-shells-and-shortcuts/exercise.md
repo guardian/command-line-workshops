@@ -6,13 +6,14 @@ We think it might be because of **increased traffic**. To investigate, we've got
 
 We'd like to answer the question – which user is sending the largest number of requests? Maybe we can tell them to knock it off!
 
-There are many ways to arrive at an answer. We're likely to use **common unix utilities**, **piping**, **redirection**, **shell scripts**, and **substitution**.
+The logs will be given to you by your instructor as a .csv file, fresh from [central ELK](https://logs.gutools.co.uk/), our logging platform. (They're real!) 
 
-The logs will be given to you by your instructor as a .csv file, fresh from [central ELK](https://logs.gutools.co.uk/), our logging platform. (They're real!)
+Some tips:
 
-To find out more about the commands mentioned in the hints below, we recommend using [tldr](https://tldr.sh/) – you can download and run this locally on the command line, or just use the webapp.
+- There are many ways to arrive at an answer. We're likely to use **common unix utilities**, **piping**, **redirection**, **shell scripts**, and **substitution**.
+- To find out more about the commands mentioned in the hints below, we recommend using [tldr](https://tldr.sh/) – you can download and run this locally on the command line, or just use the webapp.
 
-<hr/>
+## The exercise
 
 #### 1. Read the file and output all of the lines in the file that a) contain user e-mails, and b) represent HTTP requests, to stdout.
 
