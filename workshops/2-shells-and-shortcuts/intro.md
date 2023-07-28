@@ -6,6 +6,7 @@
 * `→`, `CTRL` + `F` = Move forward one character
 * `ALT` + `←`, `ALT` + `B` = Move backward one word
 * `ALT` + `→`, `ALT` + `F` = Move forward one word
+  * If you are having issues using the ALT key in Iterm2, have a look [here](https://www.clairecodes.com/blog/2018-10-15-making-the-alt-key-work-in-iterm2/).
 * `CTRL` + `A` = Go to the beginning of the line (Home)
 * `CTRL` + `E` = Go to the End of the line (End)
 * `ALT` + `Click` (i.e. with mouse) = Move cursor to clicked location
