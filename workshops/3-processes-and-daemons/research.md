@@ -20,7 +20,6 @@ Extension:
 * What is a child process?
 * How does forking a process work?
 * What is the difference between `bash ./script.sh` and `source ./script`?
-
 * What does ‘job control’ mean in UNIX?
 * What happens to a process when it is backgrounded?
 * What commands can I use to foreground a process?
